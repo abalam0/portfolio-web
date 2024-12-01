@@ -1,0 +1,393 @@
+
+
+/* start css for small device */
+@media only screen and (max-width: 575.9px){
+
+    :root{
+        --white: #ffffff;
+        --black:black;
+        --dark:dark;
+        --grey:grey;
+        --dark-grey:#D9D9D9;
+        --green:green;
+        --footer-color:#2e2c2c;
+    }
+
+    .side-gap{
+        width: 96%;
+    }
+
+/* start of header part */
+header{
+    transform: translate(2%,0);
+    padding-top: 18px;
+}
+
+header h3{
+    margin-bottom: 10px;
+}
+
+header .nav{
+    flex-direction: column;
+    text-align: center;
+}
+/* end of header part */
+
+
+/* start of hero part */
+.hero-part{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.hero-part h1{
+    padding-top: 0px;
+    font-size: 40px;
+}
+
+.hero-part p{
+    padding: 40px 0px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 4vw;
+    color: var(--dark-grey);
+}
+
+.htext-part{
+    position: static;
+    width: 100%;
+    text-align: center;
+}
+
+.texts1{
+    position: static;
+    width: 100%;
+}
+
+
+
+
+
+.hero-part .short-image{
+    display: block;
+    justify-content: center;
+    width: 75%;
+}
+
+.hero-part .image{
+    display: none;
+}
+
+
+.same-link{
+    font-size: 3.5vw;
+}
+
+
+/* end of hero  part */
+
+
+
+/* start of language part */
+.languages{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.languages .language1{
+    width: 100%;
+    text-align: center;  
+}
+
+.languages h3{
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+
+.languages p{
+    font-size: 16px;
+}
+
+/* end of language part */
+
+/* start of project-part */
+
+
+.project-part .texts h2{
+    font-size: 40px;
+}
+
+.all-projects{
+    gap: 2%;
+    flex-direction: column;
+
+}
+
+
+.project1{
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+
+
+/* hovar part start */
+
+.image1{
+    position: static;
+    transition: 0.3s ease;
+    line-height: 26px;
+}
+
+.image1:hover img{
+    opacity: 100;
+}
+
+
+
+.hover-text a{
+    display: inline;
+}
+
+
+.hover-text{
+    display: inline;
+    position: static;
+    visibility: visible;
+    opacity: 100;
+    transition: 0 ;
+}
+
+.hover-text #hover1{
+    display: inline;
+}
+
+.hover-text #hover2{
+    display: inline;
+    padding-left: 10px;
+}
+
+.image1:hover .hover-text{
+    visibility: visible;
+    opacity: 100;
+}
+
+.hover-text #hover1:hover a{
+   color: var(--white);
+}
+.hover-text #hover2:hover a{
+   color: var(--white);
+}
+
+
+
+/* hovar part end */
+/* end of project-part */
+
+
+.contact-part{
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.con-texts{
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+.con-texts h5{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+form{
+    width: 100%;
+}
+
+footer .nav{
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .nav h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* end of footer */
+
+
+
+
+
+
+}
+/* end css for screen size of small device */
+
+
+
+
+
+
+/* start css for screen size of medium device */
+@media only screen and (min-width:576px) and (max-width: 991.9px){
+
+    .side-gap{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    header{
+        position: absolute;
+        padding: 30px 0px;
+        transform: translate(5.5% ,0);
+        z-index: 1;
+    }
+
+/* start of hero part */
+
+.hero-part h1{
+    font-size:7vw;
+    width: 100%;
+}
+.hero-part p{
+    font-size: 2vw;
+    padding: 40px 0px;
+    padding-bottom: 40px;
+}
+
+/* end of hero part */
+
+
+
+/* start of language part */
+.languages{
+    width: 100%;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.languages .language1{
+    width: 49%;
+    text-align: center;  
+}
+
+.languages h3{
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+
+.languages p{
+    font-size: 16px;
+}
+
+/* end of language part */
+
+/* start of project-part */
+
+
+.project-part .texts h2{
+    font-size: 40px;
+}
+
+.all-projects{
+    gap: 2%;
+
+}
+
+
+.project1{
+    width: 49%;
+    margin-bottom: 40px;
+}
+
+
+.project1 img{
+    width: 100%;
+}
+
+
+/* hovar part start */
+
+.image1{
+    position: static;
+    transition: 0.3s ease;
+    line-height: 26px;
+}
+
+.image1:hover img{
+    opacity: 100;
+}
+
+
+
+.hover-text a{
+    display: inline;
+}
+
+
+.hover-text{
+    display: inline;
+    position: static;
+    visibility: visible;
+    opacity: 100;
+    transition: 0 ;
+    font-size: 20px;
+}
+
+.hover-text #hover1{
+    display: inline;
+}
+
+.hover-text #hover2{
+    display: inline;
+    padding-left: 10px;
+}
+
+.image1:hover .hover-text{
+    visibility: visible;
+    opacity: 100;
+}
+
+.hover-text #hover1:hover a{
+   color: var(--white);
+}
+.hover-text #hover2:hover a{
+   color: var(--white);
+}
+
+/* hovar part end */
+/* end of project-part */
+
+/* start of footer part */
+.contact-part{
+    width: 72%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 87px;
+}
+.con-texts{
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+.con-texts h5{
+    font-size: 40px;
+}
+
+form{
+    width: 100%;
+}
+/* end of footer part */
+
+}
+/* end css for screen size of medium device */

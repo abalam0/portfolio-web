@@ -1,0 +1,377 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Grotesk',sans-serif;
+    background-color: black;
+}
+
+
+
+
+:root{
+    --white: #ffffff;
+    --black:black;
+    --dark:dark;
+    --grey:#D9D9D9;
+    --dark-grey:#D9D9D9;
+    --green:green;
+    --footer-color:#2e2c2c;
+}
+
+
+
+.side-gap{
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+/* start of header part */
+
+header{
+    position: absolute;
+    padding: 40px 0px;
+    transform: translate(16.5% ,0);
+    z-index: 1;
+}
+
+.nav{
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+header h3{
+    font-size: 28px;
+}
+
+
+.links a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+.links a i{
+    font-size: 20px;
+    color: var(--white);
+}
+
+
+
+/* end of header part */
+
+
+/* start of hero part */
+.hero-part{
+    display: flex;
+    margin-bottom: 0px;
+}
+
+
+.htext-part{
+    position: relative;
+    width: 60%;
+    height: auto;
+}
+
+.texts1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120%;
+    z-index: 1;
+}
+
+.hero-part h1{
+    padding-top: 160px;
+    font-size: 5.9vw;
+    font-weight: 709;
+    color: var(--white);
+}
+
+.hero-part i{
+    font-size: 4vw;
+    color: rgb(65, 132, 196) ;
+    font-weight: 700;
+}
+
+
+
+
+.hero-part span{
+    text-decoration: underline ;
+    text-decoration-color: var(--green);
+    text-underline-offset: 15.5px;  /*Adds a vertical space (gap) between the text and the underline. */
+    text-decoration-thickness: 5px;
+    text-decoration-skip-ink: none;
+}
+
+.hero-part p{
+    padding: 40px 0px;
+    padding-bottom: 90px;
+    width: 70%;
+    font-size: 1.4vw;
+    color: var(--dark-grey);
+}
+
+.same-link{
+    font-size: 1.8vw;
+    color: var(--white);
+    text-decoration-color: var(--green);
+    text-decoration-thickness: 3px;
+    transition: 0.3s ease ;
+    text-underline-offset: 6px;  /*Adds a vertical space (gap) between the text and the underline. */
+}
+
+.same-link:hover{
+    color: var(--green);
+}
+
+
+.image{
+    padding-top: 90px;
+    width:40%;
+    background-color: var(--footer-color);
+}
+
+.hero-part img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero-part .short-image{
+    display: none;
+    padding-top: 90px;
+    width:40%;
+    background-color: var(--footer-color);
+}
+
+
+.hero-part .img-hr{
+    display: none;
+}
+/* end of hero part */
+
+/* start of language part */
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 78px;
+    justify-content: center;
+    gap: 2%;
+}
+
+.languages .language1{
+    width: 32%;
+    padding-bottom: 53px;
+}
+
+.languages h3{
+    padding-bottom: 10px;
+    font-size: 42px;
+    color: var(--white);
+}
+
+.languages p{
+    font-size: 18px;
+    color: var(--dark-grey);
+}
+
+/* end of language part */
+
+/* start of project-part */
+.project-part{
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+.project-part .texts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.project-part .texts h2{
+    color: var(--white);
+    font-size: 88px;
+}
+
+.all-projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+
+.project1{
+    width: 48.5%;
+    margin-bottom: 40px;
+}
+
+
+.project1 img{
+    width: 100%;
+}
+
+
+
+/* hovar part start */
+
+.image1{
+    position: relative;
+    transition: 0.3s ease;
+    line-height: 26px;
+}
+
+.image1:hover img{
+    opacity: 40%;
+}
+
+
+
+.hover-text a{
+    display: block;
+    text-align: center;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--green);
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+
+.hover-text{
+    position: absolute;
+    visibility: hidden;
+    font-size: 25px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease ;
+}
+
+.image1:hover .hover-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+.hover-text #hover1:hover a{
+   color: var(--green);
+}
+.hover-text #hover2:hover a{
+   color: var(--green);
+}
+
+
+
+/* hovar part end */
+
+.project1 h4{
+    font-size: 24px;
+    padding: 10px 0px;
+    color: var(--white);
+}
+.project1 span{
+    margin: 0px 20px 0px 0px ;
+    color: var(--dark-grey);
+}
+/* end of project-part */
+
+/* start of footer */
+
+
+
+/* start of contacr part */
+footer{
+    padding-top: 84px;
+    background-color:var(--footer-color);
+}
+
+
+.contact-part{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.con-texts{
+    width: 445px;
+
+}
+.con-texts h5{
+    font-size: 88px;
+    color: var(--white);
+    margin-bottom: 30px;
+    gap: 2%;
+}
+
+.contact-part p{
+    color: var(--dark-grey);
+}
+
+form{
+    width: 50%;
+}
+
+
+
+form input ,textarea{
+    width: 100%;
+    height: 80px;
+    margin: 2px;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: var(--footer-color);
+    color: var(--dark-grey);
+    border-bottom: 1px solid ;
+    overflow: none;
+}
+
+textarea{
+    color: var(--dark-grey);
+    resize: none; /*this hide the textarea width,height  bar*/
+    overflow: hidden; /*this hide the textarea  scroll bar */
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button button{
+    height: 35px;
+    margin-top: 30px;
+    border: none;
+    background-color: var(--footer-color);
+    color: var(--white);
+    border-bottom: 2px solid var(--green);
+    transition: 0.3s ease ;
+}
+
+button:hover{
+    color: var(--green);
+}
+
+footer .nav{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* start of contacr part */
